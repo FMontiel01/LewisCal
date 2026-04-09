@@ -10,7 +10,7 @@ permalink: /backlogs/sprint-backlog/
 
 **Sprint Goal:** Enable ICS import, schedule viewing with auto-sorting, and live calendar updates.
 
-**Team Capacity:** 30 SP  
+**Team Capacity:** 24 story points (4 members × 6 hours)
 
 
 ---
