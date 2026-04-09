@@ -6,6 +6,8 @@ permalink: /backlogs/sprint-backlog/
 
 # Sprint Backlog – Sprint 5
 
+**Sprint 4 Planning Participants:** Fernando (Scrum Master), Nana (Product Owner), Teju (Developer), Leland (Developer)
+
 **Sprint Goal:** Enable ICS import, schedule viewing with auto-sorting, and live calendar updates.
 
 **Team Capacity:** 30 SP  
