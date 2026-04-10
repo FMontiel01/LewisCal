@@ -3,13 +3,13 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/fireba
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCIaXLeCPA1D4CD1zc3c9596DR3tsbr9lA",
-  authDomain: "lewiscal-2360d.firebaseapp.com",
-  projectId: "lewiscal-2360d",
-  storageBucket: "lewiscal-2360d.appspot.com",
-  messagingSenderId: "676880196837",
-  appId: "1:676880196837:web:5b8b3dab699c57cd80a00c",
-  measurementId: "G-P268G5V62W"
+  apiKey: "AIzaSyDALbrgKb2xcyrCuP91Wh-28luF4De61TY",
+  authDomain: "lewiscal-2909a.firebaseapp.com",
+  projectId: "lewiscal-2909a",
+  storageBucket: "lewiscal-2909a.firebasestorage.app",
+  messagingSenderId: "381676115165",
+  appId: "1:381676115165:web:3859a7a5e06805defd7734",
+  measurementId: "G-N3GJGB715K"
 };
 
 const app = initializeApp(firebaseConfig);
