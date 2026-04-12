@@ -1,14 +1,14 @@
 ---
 layout: default
 title: Sprint Backlog - Sprint 5
-permalink: /backlogs/sprint-backlog/
+permalink: sprint-backlog
 ---
 
 # Sprint Backlog – Sprint 5
 
-**Sprint 4 Planning Participants:** Fernando (Scrum Master), Nana (Product Owner), Teju (Developer), Leland (Developer)
+**Sprint 5 Planning Participants:** Fernando (Scrum Master), Nana (Product Owner), Teju (Developer), Leland (Developer)
 
-**Sprint Goal:** Enable ICS import, schedule viewing with auto-sorting, and live calendar updates.
+**Sprint Goal:** Enable ICS import, display today’s schedule in order, and set up the basics for future calendar updates.
 
 **Team Capacity:** 24 story points (4 members × 6 hours)
 
