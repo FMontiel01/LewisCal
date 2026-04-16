@@ -21,4 +21,4 @@ permalink: /backlogs/product-backlog/
 | LEWIS-018 | As a user, I want to see what day of the week it is displayed prominently so that I don't lose track. | 2 | 1 | N | Backlog | TBD |
 | LEWIS-019 | As a developer, I want to create a visually compelling front end design so users can see their schedules clearly. | 2 | 1 | N | Backlog | TBD |
 
-**Total Remaining:** 12 stories | 34 SP
+Total Remaining:12 stories | 34 SP
