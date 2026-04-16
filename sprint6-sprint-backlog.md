@@ -35,7 +35,7 @@ Team Capacity: 32 SP (8 SP per person)
 | LEWIS-020 | As a developer, I want to connect the front end to Firebase API so that schedule data loads dynamically. | 8 | 5 | Y | Teju |
 | LEWIS-008 | As a user, I want to see an empty state message when I have no classes today so that I know the web app is working. | 8 | 2 | N | Leland |
 | LEWIS-009 | As a user, I want to see an about page so I can contact developers to resolve any issues. | 8 | 2 | N | Nana |
-| LEWIS-019 | As a developer, I want to create a visually compelling front end design so users can see their schedules clearly. | 7 | 1 | Y | Backlog | Fernando |
+| LEWIS-019 | As a developer, I want to create a visually compelling front end design so users can see their schedules clearly. | 7 | 1 | Y | Fernando |
 
 Total: 32 SP
 Commitment 34 SP
