@@ -6,11 +6,11 @@ permalink: /backlogs/sprint-backlog/
 
 # Sprint Backlog – Sprint 6
 
-Sprint Goal: Enable ICS URL subscription, Firebase storage, live calendar feed, and frontend API integration.
+**Sprint Goal:** Enable ICS URL subscription, Firebase storage, live calendar feed, and frontend API integration.
 
-Team Capacity: 32 SP (8 SP per person)
+**Team Capacity:** 32 SP (8 SP per person)
+**Team Commitment:** 34 SP
 
----
 
 ## Team Roles for Sprint 6
 
@@ -23,9 +23,9 @@ Team Capacity: 32 SP (8 SP per person)
 
 ---
 
-## Sprint 6 Commitment (32 SP)
+## Sprint 6 Commitment (34 SP)
 
-| **ID** | **User Story / Task** | **Priority** | **SP** | **Spike** | **Assigned** |
+| ID | User Story / Task| Priority | SP | Spike | Assigned |
 |--------|------------------------|--------------|--------|-----------|--------------|
 | LEWIS-001 | As a user, I want to import my schedule from an ICS URL so that I can subscribe to live updates. | 10 | 5 | N | Nana |
 | LEWIS-002 | As a user, I want the app to host my schedule as a unique ICS URL so that I can subscribe in Google/Apple Calendar. | 10 | 5 | N | Fernando |
@@ -35,21 +35,6 @@ Team Capacity: 32 SP (8 SP per person)
 | LEWIS-020 | As a developer, I want to connect the front end to Firebase API so that schedule data loads dynamically. | 8 | 5 | Y | Teju |
 | LEWIS-008 | As a user, I want to see an empty state message when I have no classes today so that I know the web app is working. | 8 | 2 | N | Leland |
 | LEWIS-009 | As a user, I want to see an about page so I can contact developers to resolve any issues. | 8 | 2 | N | Nana |
-| LEWIS-019 | As a developer, I want to create a visually compelling front end design so users can see their schedules clearly. | 7 | 1 | Y | Fernando |
+| LEWIS-019 | As a developer, I want to create a visually compelling front end design so users can see their schedules clearly. | 7 | 2 | N | Fernando |
 
 Total: 32 SP
-Commitment 34 SP
-
-
-
----
-
-## Definition of Done
-
-- [ ] ICS URL import works
-- [ ] Schedule data persists in Firebase
-- [ ] ICS feed generates and updates
-- [ ] Front end calls Firebase API successfully
-- [ ] Empty state and about page visible
-- [ ] Product Owner accepts story
-
