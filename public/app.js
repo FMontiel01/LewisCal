@@ -1,0 +1,60 @@
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+
+import {
+  getFirestore,
+  doc,
+  getDoc
+} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDALbrgKb2xcyrCuP91Wh-28luF4De61TY",
+  authDomain: "lewiscal-2909a.firebaseapp.com",
+  projectId: "lewiscal-2909a",
+  storageBucket: "lewiscal-2909a.firebasestorage.app",
+  messagingSenderId: "381676115165",
+  appId: "1:381676115165:web:3859a7a5e06805defd7734",
+  measurementId: "G-N3GJGB715K"
+};
+
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+const db = getFirestore(app);
+
+console.log("Firebase connected");
+
+// Load Schedule
+async function loadSchedule() {
+  const docRef = doc(db, "schedules", "currentSemester");
+  const docSnap = await getDoc(docRef);
+
+  if (docSnap.exists()) {
+    const data = docSnap.data();
+    displaySchedule(data.courses);
+  } else {
+    console.log("No data found");
+  }
+}
+
+// Display Schedule
+function displaySchedule(courses) {
+  const container = document.getElementById("schedule");
+  container.innerHTML = "";
+
+  courses.forEach(course => {
+    const div = document.createElement("div");
+    div.classList.add("course-card");
+
+    div.innerHTML = `
+      <h3>${course.course}</h3>
+      <p><strong>Time:</strong>${course.startTime} - ${course.endTime}</p>
+      <p><strong>Room:</strong>${course.room}</p>
+      <p><strong>Days:</strong>${course.days.join(", ")}</p>
+    `;
+
+    container.appendChild(div);
+  });
+}
+
+loadSchedule();
