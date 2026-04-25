@@ -48,9 +48,9 @@ function displaySchedule(courses) {
 
     div.innerHTML = `
       <h3>${course.course}</h3>
-      <p><strong>Time:</strong>${course.startTime} - ${course.endTime}</p>
-      <p><strong>Room:</strong>${course.room}</p>
-      <p><strong>Days:</strong>${course.days.join(", ")}</p>
+      <p><strong>Time:</strong> ${course.startTime} - ${course.endTime}</p>
+      <p><strong>Room:</strong> ${course.room}</p>
+      <p><strong>Days:</strong> ${course.days.join(", ")}</p>
     `;
 
     container.appendChild(div);

@@ -8,23 +8,52 @@
   </head>
   <body>
     <main class="container">
-      <h1>About LewisCal</h1>
+      <section class="hero">
+        <h1>LewisCal</h1>
+        <p>
+          View and subscribe to professor class schedules in one simple place.
+        </p>
+      </section>
 
-      <p>
-        LewisCal is a web app created to help users work with class schedule
-        information in a simple and organized way.
-      </p>
+      <section class="card">
+        <h2>Proffesor Pogue's Spring Semester 2026 Schedule</h2>
 
-      <h2>Spring Semester 2026 Schedule</h2>
-      <div id="schedule"></div>
+        <p class="calendar-instructions">
+          Subscribe to the schedule using your calendar app, or download the
+          file.
+        </p>
 
-      <h2>Team Members</h2>
-      <ul>
-        <li>Fernando Montiel</li>
-        <li>Nana</li>
-        <li>Teju</li>
-        <li>Leland</li>
-      </ul>
+        <div class="calendar-actions">
+          <!-- SUBSCRIBE -->
+          <a
+            class="calendar-link"
+            href="webcal://lewiscal-2909a.firebaseapp.com/Mr_Pogue_Current_Schedule.ics"
+          >
+            📅 Subscribe to Calendar
+          </a>
+
+          <!-- DOWNLOAD (Firebase Storage) -->
+          <a
+            class="calendar-link secondary"
+            href="https://firebasestorage.googleapis.com/v0/b/lewiscal-2909a.firebasestorage.app/o/ics%2FMr_Pogue_Current_Schedule.ics?alt=media&token=64d7798a-f447-4c2c-abe0-69b21faf5f07"
+            target="_blank"
+          >
+            Download ICS File
+          </a>
+        </div>
+
+        <div id="schedule"></div>
+      </section>
+
+      <section class="card">
+        <h2>Team Members</h2>
+        <ul>
+          <li>Fernando</li>
+          <li>Nana</li>
+          <li>Teju</li>
+          <li>Leland</li>
+        </ul>
+      </section>
     </main>
     <script type="module" src="app.js"></script>
   </body>
