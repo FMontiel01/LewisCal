@@ -4,7 +4,8 @@ import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebas
 import {
   getFirestore,
   doc,
-  getDoc
+  getDoc,
+  setDoc
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 const firebaseConfig = {
@@ -23,6 +24,15 @@ const analytics = getAnalytics(app);
 const db = getFirestore(app);
 
 console.log("Firebase connected");
+
+// Save User Schedule
+async function saveSchedule(courses) {
+  const docRef = doc(db, "schedules", "currentSemester");
+
+  await setDoc(docRef, { courses });
+
+  console.log("Schedule saved");
+}
 
 // Load Schedule
 async function loadSchedule() {
@@ -44,7 +54,7 @@ function displaySchedule(courses) {
 
   const today = new Date().toLocaleDateString("en-US", { weekday: "long" });
 
-//Filter only today's courses
+// Filter only today's courses
   const todaysCourses = courses.filter(course =>
     course.days.includes(today)
   );
@@ -58,7 +68,7 @@ function displaySchedule(courses) {
     return;
   }
 
-//Loop over todaysCourses
+// Loop over todaysCourses
   todaysCourses.forEach(course => {
     const div = document.createElement("div");
     div.classList.add("course-card");
