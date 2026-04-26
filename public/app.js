@@ -58,3 +58,8 @@ function displaySchedule(courses) {
 }
 
 loadSchedule();
+
+function subscribeCalendar() {
+  window.location.href =
+    "webcal://lewiscal-2909a.firebaseapp.com/Mr_Pogue_Current_Schedule.ics";
+}
