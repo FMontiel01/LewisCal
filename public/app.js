@@ -42,7 +42,24 @@ function displaySchedule(courses) {
   const container = document.getElementById("schedule");
   container.innerHTML = "";
 
-  courses.forEach(course => {
+  const today = new Date().toLocaleDateString("en-US", { weekday: "long" });
+
+//Filter only today's courses
+  const todaysCourses = courses.filter(course =>
+    course.days.includes(today)
+  );
+
+// Empty state message for when there are no classes
+  if (todaysCourses.length === 0) {
+    const emptyMessage = document.createElement("p");
+    emptyMessage.textContent = "You have no classes today.";
+    emptyMessage.classList.add("empty-state");
+    container.appendChild(emptyMessage);
+    return;
+  }
+
+//Loop over todaysCourses
+  todaysCourses.forEach(course => {
     const div = document.createElement("div");
     div.classList.add("course-card");
 
