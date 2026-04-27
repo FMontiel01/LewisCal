@@ -62,7 +62,7 @@ function displaySchedule(courses) {
 // Empty state message for when there are no classes
   if (todaysCourses.length === 0) {
     const emptyMessage = document.createElement("p");
-    emptyMessage.textContent = "";
+    emptyMessage.textContent = "You have no classes today.";
     emptyMessage.classList.add("empty-state");
     container.appendChild(emptyMessage);
     return;
