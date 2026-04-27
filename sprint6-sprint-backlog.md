@@ -10,7 +10,34 @@ permalink: /backlogs/sprint-backlog/
 
 **Team Capacity:** 32 SP (8 SP per person)
 **Team Commitment:** 34 SP
+Team Member: Nana
+Role: Product Owner
+Capacity: 8 SP
+Committed: 7 SP
+% Committed: 88%
 
+Team Member: Teju
+Role: Scrum Master
+Capacity: 8 SP
+Committed: 10 SP
+% Committed: 125%
+
+Team Member: Fernando
+Role: Developer
+Capacity: 8 SP
+Committed: 10 SP
+% Committed: 125%
+
+Team Member: Leland
+Role: Developer
+Capacity: 8 SP
+Committed: 7 SP
+% Committed: 88%
+
+TOTAL
+Capacity: 32 SP
+Committed: 34 SP
+% Committed: 106%
 
 ## Team Roles for Sprint 6
 
