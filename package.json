@@ -1,0 +1,24 @@
+{
+  "name": "lewiscal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FMontiel01/LewisCal.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FMontiel01/LewisCal/issues"
+  },
+  "homepage": "https://github.com/FMontiel01/LewisCal#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

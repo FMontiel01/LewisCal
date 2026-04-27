@@ -1,23 +1,100 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f4f4f4;
+  background: #f4f4f6;
   color: #222;
 }
 
 .container {
-  max-width: 800px;
-  margin: 60px auto;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.hero {
+  background: #5b1728;
+  color: white;
+  padding: 3rem 2rem;
+  border-radius: 0 0 24px 24px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-top: 0.75rem;
+}
+
+.card {
   background: white;
-  padding: 40px;
+  padding: 2rem;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 1.5rem;
+}
+
+.calendar-instructions {
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.calendar-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 1rem 0 2rem;
+}
+
+.calendar-link {
+  display: inline-block;
+  padding: 0.75rem 1rem;
+  background: #671e2f;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.calendar-link:hover {
+  opacity: 0.85;
+}
+
+.calendar-link.secondary {
+  background: #444;
+}
+
+#schedule {
+  display: grid;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.course-card {
+  background: #f9f9fb;
+  border-left: 6px solid #671e2f;
+  padding: 18px 20px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-h1 {
-  margin-top: 0;
+.course-card h3 {
+  margin: 0 0 12px;
+  color: #222;
+  font-size: 1.25rem;
 }
 
-ul {
-  padding-left: 20px;
+.course-card p {
+  margin: 6px 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.course-card strong {
+  color: #222;
+  margin-right: 4px;
 }
