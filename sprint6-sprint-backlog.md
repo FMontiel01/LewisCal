@@ -61,7 +61,7 @@ Committed: 34 SP
 | LEWIS-005 | As a developer, I want to generate an ICS feed from stored schedule data so that users can subscribe to live calendar updates. | 9 | 5 | Y | In Progress | Leland |
 | LEWIS-020 | As a developer, I want to connect the front end to Firebase API so that schedule data loads dynamically. | 8 | 5 | Y | Complete | Teju |
 | LEWIS-008 | As a user, I want to see an empty state message when I have no classes today so that I know the web app is working. | 8 | 2 | N | In Progress | Leland |
-| LEWIS-009 | As a user, I want to see an about page so I can contact developers to resolve any issues. | 8 | 2 | N | In Progress | Nana |
+| LEWIS-009 | As a user, I want to see an about page so I can contact developers to resolve any issues. | 8 | 2 | N | Complete | Nana |
 | LEWIS-019 | As a developer, I want to create a visually compelling front end design so users can see their schedules clearly. | 7 | 2 | N | In Progress | Fernando |
 
 Total: 32 SP
