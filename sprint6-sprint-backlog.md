@@ -28,7 +28,7 @@ permalink: /backlogs/sprint-backlog/
 | **ID** | **User Story / Task** | **Priority** | **SP** | **Spike** | **Status** | **Assigned** |
 |--------|-----------------------|--------------|--------|-----------|------------|--------------|
 | LEWIS-001 | As a user, I want to import my schedule from an ICS URL so that I can subscribe to live updates. | 10 | 5 | N | In Progress | Nana |
-| LEWIS-002 | As a user, I want the app to host my schedule as a unique ICS URL so that I can subscribe in Google/Apple Calendar. | 10 | 5 | N | In Progress | Fernando |
+| LEWIS-002 | As a user, I want the app to host my schedule as a unique ICS URL so that I can subscribe in Google/Apple Calendar. | 10 | 5 | N | Complete | Fernando |
 | LEWIS-003 | As a user, I want my schedule data to persist so that I don't have to re-enter courses every time. | 10 | 5 | N | Complete | Teju |
 | LEWIS-004 | As a developer, I want to set up Firebase Firestore so that we can store user schedule data. | 9 | 3 | Y | Complete | Fernando |
 | LEWIS-005 | As a developer, I want to generate an ICS feed from stored schedule data so that users can subscribe to live calendar updates. | 9 | 5 | Y | In Progress | Leland |
