@@ -85,3 +85,15 @@ function displaySchedule(courses) {
 }
 
 loadSchedule();
+
+const outlookLink =
+  "webcal://firebasestorage.googleapis.com/v0/b/lewiscal-2909a.firebasestorage.app/o/ics%2FMr_Pogue_Current_Schedule.ics?alt=media&token=64d7798a-f447-4c2c-abe0-69b21faf5f07";
+
+const outlookButton = document.getElementById("copyOutlookLink");
+
+if (outlookButton) {
+  outlookButton.addEventListener("click", async () => {
+    await navigator.clipboard.writeText(outlookLink);
+    alert("Outlook link copied! Paste it into Outlook → Add Calendar → Subscribe from web.");
+  });
+}

@@ -24,15 +24,29 @@
         </p>
 
         <div class="calendar-actions">
-          <!-- SUBSCRIBE -->
+          <!-- GOOGLE -->
           <a
             class="calendar-link"
-            href="webcal://lewiscal-2909a.firebaseapp.com/Mr_Pogue_Current_Schedule.ics"
+            href="https://calendar.google.com/calendar/render?cid=https%3A%2F%2Flewiscal-2909a.web.app%2FMr_Pogue_Current_Schedule.ics"
+            target="_blank"
           >
-            📅 Subscribe to Calendar
+            Add to Google Calendar
           </a>
 
-          <!-- DOWNLOAD (Firebase Storage) -->
+          <!-- APPLE -->
+          <a
+            class="calendar-link"
+            href="webcal://firebasestorage.googleapis.com/v0/b/lewiscal-2909a.firebasestorage.app/o/ics%2FMr_Pogue_Current_Schedule.ics?alt=media&token=64d7798a-f447-4c2c-abe0-69b21faf5f07"
+          >
+            Add to Apple Calendar
+          </a>
+
+          <!-- OUTLOOK -->
+          <button class="calendar-link" id="copyOutlookLink">
+            Copy Outlook Link
+          </button>
+
+          <!-- DOWNLOAD -->
           <a
             class="calendar-link secondary"
             href="https://firebasestorage.googleapis.com/v0/b/lewiscal-2909a.firebasestorage.app/o/ics%2FMr_Pogue_Current_Schedule.ics?alt=media&token=64d7798a-f447-4c2c-abe0-69b21faf5f07"
@@ -41,6 +55,12 @@
             Download ICS File
           </a>
         </div>
+
+        <p class="calendar-instructions">
+          Google Calendar opens in a browser. Apple Calendar opens directly. For
+          Outlook, click "Copy Outlook Link" and paste it into: Outlook → Add
+          Calendar → Subscribe from web.
+        </p>
 
         <div id="schedule"></div>
       </section>
