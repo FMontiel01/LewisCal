@@ -95,8 +95,10 @@ if (googleButton) {
       await navigator.clipboard.writeText(googleCalendarLink);
 
       alert(
-        "Google Calendar link copied! Go to Google Calendar → Other calendars → + → From URL, then paste the link."
+        "Google Calendar link copied! Google Calendar will open now. Go to Other calendars → + → From URL, then paste the link."
       );
+
+      window.open("https://calendar.google.com/calendar/u/0/r/settings/addbyurl", "_blank");
     } catch (error) {
       console.error("Could not copy Google Calendar link:", error);
       alert("Could not copy the link. Please copy it manually: " + googleCalendarLink);
@@ -115,8 +117,10 @@ if (outlookButton) {
       await navigator.clipboard.writeText(outlookLink);
 
       alert(
-        "Outlook link copied! Paste it into Outlook → Add Calendar → Subscribe from web."
+        "Outlook link copied! Outlook Calendar will open now. Go to Add calendar → Subscribe from web, then paste the link."
       );
+
+      window.open("https://outlook.live.com/calendar/0/view/month", "_blank");
     } catch (error) {
       console.error("Could not copy Outlook link:", error);
       alert("Could not copy the link. Please copy it manually: " + outlookLink);
