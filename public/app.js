@@ -97,3 +97,23 @@ if (outlookButton) {
     alert("Outlook link copied! Paste it into Outlook → Add Calendar → Subscribe from web.");
   });
 }
+
+const googleCalendarLink =
+  "https://lewiscal-2909a.web.app/Mr_Pogue_Current_Schedule.ics";
+
+const googleButton = document.getElementById("copyGoogleLink");
+
+if (googleButton) {
+  googleButton.addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(googleCalendarLink);
+
+      alert(
+        "Google Calendar link copied! Go to Google Calendar → Other calendars → + → From URL, then paste the link."
+      );
+    } catch (error) {
+      console.error("Could not copy Google Calendar link:", error);
+      alert("Could not copy the link. Please copy it manually.");
+    }
+  });
+}
