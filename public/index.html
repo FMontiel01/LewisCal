@@ -3,76 +3,106 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About LewisCal</title>
+    <title>LewisCal</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <main class="container">
-      <section class="hero">
-        <h1>LewisCal</h1>
-        <p>
-          View and subscribe to professor class schedules in one simple place.
-        </p>
-      </section>
+    <header class="navbar">
+      <div class="nav-logo">LewisCal</div>
 
-      <section class="card">
-        <h2>Profesor Pogue's Spring Semester 2026 Schedule</h2>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="schedule.html">Schedules</a>
+        <a href="create_schedule.html">Create Schedule</a>
+      </nav>
+    </header>
 
-        <p class="calendar-instructions">
-          Subscribe to the schedule using your calendar app, or download the
-          file.
-        </p>
+    <main>
+      <section class="home-hero">
+        <div class="hero-content">
+          <p class="eyebrow">Lewis University Calendar Tool</p>
 
-        <div class="calendar-actions">
-          <!-- GOOGLE -->
-          <button class="calendar-link" id="copyGoogleLink">
-            Copy Google Calendar Link
-          </button>
+          <h1>Publish and subscribe to course schedules with ease.</h1>
 
-          <!-- APPLE -->
-          <a
-            class="calendar-link"
-            href="webcal://lewiscal-2909a.web.app/Mr_Pogue_Current_Schedule.ics"
-          >
-            Add to Apple Calendar
-          </a>
+          <p class="hero-description">
+            LewisCal helps students and professors preview course schedules,
+            download ICS files, and subscribe using Google Calendar, Apple
+            Calendar, or Outlook.
+          </p>
 
-          <!-- OUTLOOK -->
-          <button class="calendar-link" id="copyOutlookLink">
-            Copy Outlook Link
-          </button>
+          <div class="hero-buttons">
+            <a href="schedule.html" class="primary-button">
+              View Professor Schedules
+            </a>
 
-          <!-- DOWNLOAD -->
-          <a
-            class="calendar-link secondary"
-            href="https://lewiscal-2909a.web.app/Mr_Pogue_Current_Schedule.ics"
-            target="_blank"
-          >
-            Download ICS File
-          </a>
+            <a href="create_schedule.html" class="secondary-button">
+              Create Your Own Schedule
+            </a>
+          </div>
         </div>
-
-        <p class="calendar-instructions">
-          For Google Calendar, click "Copy Google Calendar Link", then go to
-          Google Calendar → Other calendars → + → From URL and paste the link.
-          For Apple Calendar, click "Add to Apple Calendar". For Outlook, click
-          "Copy Outlook Link" and paste it into Outlook → Add Calendar →
-          Subscribe from web.
-        </p>
-
-        <div id="schedule"></div>
       </section>
 
-      <section class="card">
+      <section class="section">
+        <h2>How LewisCal Works</h2>
+
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h3>1. Preview</h3>
+            <p>
+              View a professor's schedule before adding it to your calendar.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <h3>2. Subscribe</h3>
+            <p>
+              Copy the calendar link or open it with Apple Calendar, Outlook, or
+              Google Calendar.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <h3>3. Stay Organized</h3>
+            <p>Keep course meetings in your personal calendar app.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Featured Schedules</h2>
+
+        <div class="schedule-grid">
+          <div class="schedule-option-card">
+            <h3>Professor Pogue</h3>
+            <p>Spring Semester 2026 course schedule.</p>
+            <a href="schedule.html" class="calendar-link">Preview Schedule</a>
+          </div>
+
+          <div class="schedule-option-card">
+            <h3>Create Your Own</h3>
+            <p>Build a custom schedule and generate an ICS file.</p>
+            <a href="create_schedule.html" class="calendar-link secondary">
+              Start Creating
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section team-section">
         <h2>Team Members</h2>
-        <ul>
-          <li>Fernando</li>
-          <li>Nana</li>
-          <li>Teju</li>
-          <li>Leland</li>
-        </ul>
+
+        <div class="team-list">
+          <span>Fernando</span>
+          <span>Nana</span>
+          <span>Teju</span>
+          <span>Leland</span>
+        </div>
       </section>
     </main>
-    <script type="module" src="app.js"></script>
+
+    <footer class="footer">
+      <p>LewisCal - Final Project</p>
+    </footer>
   </body>
 </html>

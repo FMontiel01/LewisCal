@@ -95,7 +95,7 @@ if (googleButton) {
       await navigator.clipboard.writeText(googleCalendarLink);
 
       alert(
-        "Google Calendar link copied! Google Calendar will open now. Go to Other calendars → + → From URL, then paste the link."
+        "Calendar link copied. Google Calendar will open now. Paste the link under Other calendars → From URL."
       );
 
       window.open("https://calendar.google.com/calendar/u/0/r/settings/addbyurl", "_blank");
@@ -117,7 +117,7 @@ if (outlookButton) {
       await navigator.clipboard.writeText(outlookLink);
 
       alert(
-        "Outlook link copied! Outlook Calendar will open now. Go to Add calendar → Subscribe from web, then paste the link."
+        "Outlook link copied. Paste it into Outlook under Add calendar → Subscribe from web."
       );
 
       window.open("https://outlook.live.com/calendar/0/view/month", "_blank");
