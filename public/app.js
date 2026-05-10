@@ -128,4 +128,48 @@ if (outlookButton) {
   });
 }
 
+const nextGoogleCalendarLink =
+  "https://lewiscal-2909a.web.app/Mr_Pogue_Next_Semester_Schedule.ics";
+
+const nextGoogleButton = document.getElementById("copyNextGoogleLink");
+
+if (nextGoogleButton) {
+  nextGoogleButton.addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(nextGoogleCalendarLink);
+
+      alert(
+        "Next semester calendar link copied. Google Calendar will open now. Paste the link under Other calendars → From URL."
+      );
+
+      window.open("https://calendar.google.com/calendar/u/0/r/settings/addbyurl", "_blank");
+    } catch (error) {
+      console.error("Could not copy next semester Google Calendar link:", error);
+      alert("Could not copy the link. Please copy it manually: " + nextGoogleCalendarLink);
+    }
+  });
+}
+
+const nextOutlookLink =
+  "webcal://lewiscal-2909a.web.app/Mr_Pogue_Next_Semester_Schedule.ics";
+
+const nextOutlookButton = document.getElementById("copyNextOutlookLink");
+
+if (nextOutlookButton) {
+  nextOutlookButton.addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(nextOutlookLink);
+
+      alert(
+        "Next semester Outlook link copied. Paste it into Outlook under Add calendar → Subscribe from web."
+      );
+
+      window.open("https://outlook.live.com/calendar/0/view/month", "_blank");
+    } catch (error) {
+      console.error("Could not copy next semester Outlook link:", error);
+      alert("Could not copy the link. Please copy it manually: " + nextOutlookLink);
+    }
+  });
+}
+
 loadSchedule();

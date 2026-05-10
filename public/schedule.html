@@ -95,23 +95,64 @@
         <h2>Next Semester Schedule</h2>
 
         <p class="calendar-instructions">
-          Add Professor Pogue's next semester classes here once the schedule is
-          finalized.
+          This schedule includes Professor Pogue's next semester classes.
         </p>
 
-        <div class="empty-preview">
-          <p>Next semester schedule coming soon.</p>
+        <div class="course-preview-grid">
+          <div class="course-card">
+            <h3>Software Engineering</h3>
+            <p><strong>Days:</strong> Tuesday, Thursday</p>
+            <p><strong>Time:</strong> 9:30 AM - 10:45 AM</p>
+            <p><strong>Room:</strong> AS-104A</p>
+          </div>
+
+          <div class="course-card">
+            <h3>Object Oriented Programming</h3>
+            <p><strong>Days:</strong> Tuesday, Thursday</p>
+            <p><strong>Time:</strong> 12:30 PM - 1:45 PM</p>
+            <p><strong>Room:</strong> AS 106A</p>
+          </div>
+
+          <div class="course-card">
+            <h3>Software System Capstone Prjct</h3>
+            <p><strong>Days:</strong> Tuesday</p>
+            <p><strong>Time:</strong> 2:00 PM - 3:15 PM</p>
+            <p><strong>Room:</strong> AS-104A</p>
+          </div>
         </div>
 
+        <h3 class="section-subtitle">Add This Schedule</h3>
+
         <div class="calendar-actions calendar-card-grid">
+          <button class="calendar-link" id="copyNextGoogleLink">
+            Copy Google Calendar Link
+          </button>
+
+          <a
+            class="calendar-link"
+            href="webcal://lewiscal-2909a.web.app/Mr_Pogue_Next_Semester_Schedule.ics"
+          >
+            Add to Apple Calendar
+          </a>
+
+          <button class="calendar-link" id="copyNextOutlookLink">
+            Copy Outlook Link
+          </button>
+
           <a
             class="calendar-link secondary"
-            href="Mr_Pogue_Next_Semester_Schedule.ics"
+            href="https://lewiscal-2909a.web.app/Mr_Pogue_Next_Semester_Schedule.ics"
             target="_blank"
           >
-            Download Next Semester ICS
+            Download ICS File
           </a>
         </div>
+
+        <p class="calendar-instructions">
+          For Google Calendar, copy the link and paste it into Google Calendar
+          under Other Calendars → From URL. For Outlook, copy the webcal link
+          and paste it into Subscribe from Web.
+        </p>
       </section>
     </main>
 
