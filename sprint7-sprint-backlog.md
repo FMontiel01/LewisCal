@@ -31,7 +31,7 @@ Team Capacity:48 hours (12 hours per person)
 | PRES-002 | As a user, I want the app to auto-generate an ICS file from my schedule so that I can export to Google/Apple Calendar. | 10 | 10 | Y | Complete | Fernando |
 | PRES-003 | As a team, we want to prepare a class presentation demo so that we showcase working functionality. | 10 | 4 | N | Complete | Teju |
 | PRES-004 | As a developer, I want to ensure all features are bug-free and documented so that the presentation runs smoothly. | 9 | 6 | N | Complete | Leland |
-| LEWIS-001 | As a user, I want to import my schedule from an ICS URL so that I can subscribe to live updates. | 10 | 8 | Complete | N | Nana |
+| LEWIS-001 | As a user, I want to import my schedule from an ICS URL so that I can subscribe to live updates. | 10 | 8 | N | Complete | Nana |
 | LEWIS-019 | As a developer, I want to create a visually compelling front end design so users can see their schedules clearly. | 7 | 4 | N | Complete | Fernando |
 | LEWIS-010 | As a user, I want to see an error message when an ICS file fails to load so that I understand what went wrong. | 7 | 4 | N | Complete | Leland |
 | LEWIS-007 | As a Scrum Master, I want to facilitate Sprint Planning and coordinate the team so that we stay on track for presentation. | 8 | 4 | N |Complete | Teju |
