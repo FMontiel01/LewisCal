@@ -385,3 +385,67 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+.about-team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.team-member-card {
+  background: #f9f9fb;
+  border-left: 6px solid #671e2f;
+  padding: 1.5rem;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.team-member-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+.team-member-card h3 {
+  margin: 0 0 0.4rem;
+  color: #671e2f;
+  font-size: 1.3rem;
+}
+
+.role {
+  font-weight: bold;
+  color: #555;
+  margin: 0 0 0.75rem;
+}
+
+.email-link {
+  display: inline-block;
+  margin-top: 0.75rem;
+  color: #671e2f;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+.about-contact {
+  margin-top: 2rem;
+  background: #f4f4f6;
+  padding: 1.5rem;
+  border-radius: 14px;
+  text-align: center;
+}
+
+.about-contact h3 {
+  margin-top: 0;
+  color: #671e2f;
+}
+
+@media (max-width: 800px) {
+  .about-team-grid {
+    grid-template-columns: 1fr;
+  }
+}
