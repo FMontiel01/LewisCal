@@ -33,6 +33,16 @@ scheduleForm.addEventListener("submit", function (event) {
     return;
   }
 
+  if (endDate < startDate) {
+    alert("End date cannot be before start date.");
+    return;
+  }
+
+  if (endTime <= startTime) {
+    alert("End time must be after start time.");
+    return;
+  }  
+
   const courseData = {
     scheduleName,
     courseName,
@@ -55,7 +65,11 @@ scheduleForm.addEventListener("submit", function (event) {
 });
 
 function showPreview() {
-  customSchedulePreview.innerHTML = "";
+  customSchedulePreview.innerHTML = `
+    <p class="calendar-instructions">
+      You currently have ${courses.length} course(s) in this schedule.
+    </p>
+  `;
 
   courses.forEach(function (course, index) {
     const courseCard = document.createElement("div");
